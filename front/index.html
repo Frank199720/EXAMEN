@@ -10,31 +10,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <title>Primer App</title>
+    <title>Examen</title>
 </head>
 <body>
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
             <form>
                 <div class="row mb-3" style="border: solid 1px solid;">
+
                     <div class="col">
-                        <label for="DocumentType" class="form-label">Tipo Documento</label>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="facturaRadio" checked>
-                          <label class="form-check-label" for="flexRadioDefault1">
-                            Factura
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="boletaRadio">
-                          <label class="form-check-label" for="flexRadioDefault2">
-                            Boleta Venta
-                          </label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <label for="exampleInputPassword1" class="form-label">Documento</label>
-                        <input type="text" class="form-control form-control-sm" id="documento">
+                        <label for="exampleInputPassword1" class="form-label">Pedido</label>
+                        <input type="text" class="form-control form-control-sm" id="pedido">
                     </div>
                     <div class="col">
                         <label for="exampleInputPassword1" class="form-label">Nro Cuotas</label>
@@ -61,12 +47,15 @@
             <div class="col-7">
                 <table class="table table-responsive">
                     <thead>
-                        <th>Nro de Cuota</th>
-                        <th>Fecha de Vencimiento</th>
-                        <th>Importe</th>
-                        <th>Interes</th>
-                        <th>IGV Interes</th>
-                        <th>Valor Cuota</th>
+                        <th>Documento</th>
+                        <th>Nombre Cliente</th>
+                        <th>Fecha Documento</th>
+                        <th>Tasa Rango</th>
+                        <th>Tasa Zona</th>
+                        <th>Monto Deuda</th>
+                        <th>Total Descuento Rango</th>
+                        <th>Total Descuento Zona</th>
+                        <th>Monto a Pagar</th>
                     </thead>
                     <tbody id="tablaCuota">
 

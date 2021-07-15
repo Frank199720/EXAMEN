@@ -1,7 +1,7 @@
 var cronograma = (function () {
   return {
     cargarCronogramaPagos: function () {
-      var documento = $("#documento").val();
+      var documento = $("#pedido").val();
       var nroCuotas = $("#nroCuotas").val();
       var facturaRadio = $("#facturaRadio").is(":checked");
 
@@ -32,12 +32,15 @@ var cronograma = (function () {
               respuesta.forEach((element) => {
                 console.log(element.feVence.date);
                 html += "<tr>";
-                html += `<td>${element.NroCuota}</td>`;
-                html += `<td>${element.NroCuota}</td>`;
-                html += `<td>${element.Importe}</td>`;
-                html += `<td>${element.Interes}</td>`;
-                html += `<td>${element.IgvInteres}</td>`;
-                html += `<td>${element.ValorCuota}</td>`;
+                html += `<td>${element.Pedido}</td>`;
+                html += `<td>${element.Nombre}</td>`;
+                html += `<td>${element.Fecha}</td>`;
+                html += `<td>${element.tasa}</td>`;
+                html += `<td>${element.tasaAgregada}</td>`;
+                html += `<td>${element.total}</td>`;
+                html += `<td>${element.totalDescuento}</td>`;
+                html += `<td>${element.totalDescuentoAgregado}</td>`;
+                html += `<td>${element.totalPago}</td>`;
                 html += "</tr>";
               });
     
