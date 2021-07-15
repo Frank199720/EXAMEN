@@ -2,9 +2,7 @@ var cronograma = (function () {
   return {
     cargarCronogramaPagos: function () {
       var documento = $("#pedido").val();
-      var nroCuotas = $("#nroCuotas").val();
       var facturaRadio = $("#facturaRadio").is(":checked");
-
       var tipo;
 
       facturaRadio == true ? (tipo = "F") : (tipo = "A");
